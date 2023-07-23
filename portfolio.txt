@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="praniport.css">
+    <script>
+        function toggleSection(sectionId) {
+            const sections = document.querySelectorAll(".content section");
+            sections.forEach(section => {
+                if (section.id === sectionId) {
+                    section.style.display = "block";
+                } else {
+                    section.style.display = "none";
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a style="background-color:DodgerBlue;" href="#" onclick="toggleSection('about')">About</a></li>
+                <li><a style="background-color:DodgerBlue;" href="#" onclick="toggleSection('education')">Education</a></li>
+                <li><a style="background-color:DodgerBlue;" href="#" onclick="toggleSection('skills')">Skills</a></li>
+                <li><a style="background-color:DodgerBlue;" href="#" onclick="toggleSection('projects')">Projects</a></li>
+                <li><a style="background-color:DodgerBlue;" href="#" onclick="toggleSection('certificates')">Certificates</a></li>
+                <li><a style="background-color:DodgerBlue;"  href="#" onclick="toggleSection('contact')">Contact</a></li>
+           
+        </nav>
+    
+        <div class="content">
+            <header align = "center" style="font-size:50px"> 
+                 PORTFOLIO
+            </header>
+            <section id="home">
+                <h2>Welcome to My Page </h2>
+                <p style="font-family:courier;">
+                    This is my personal portfolio showcasing my projects and skills in electrical and electronics engineering. Feel free to explore!
+                </p>
+            </section>
+            <section id="about" style="display:none;">
+                <h2>About Me</h2>
+                <p style="font-family:courier;">
+                    Hello! I am pranathi Gorrepati, and I am passionate about electrical and electronics engineering.
+                    I am currently pursuing my B.Tech from Vignan's Nirula Institute of Technology and Science for Women, Guntur.
+                    I am eager to contribute to the team and company's goals while continuously learning and developing my skills.
+                </p>
+            </section>
+            <section id="education">
+                <h2>Education</h2>
+                <ul>
+                    <li>
+                        <strong>Graduation: B.Tech (Electrical and Electronics Engineering)</strong><br>
+                        <p style="font-family:courier;">Vignan's Nirula Institute of Technology and Science for Women, Guntur</p>
+                        <p style="font-family:courier;">2020 - Present</p>
+                        <p style="font-family:courier;">CGPA: 7.70 (66.66%)</p> 
+                    </li>
+                    <li>
+                        <strong>Diploma: Mallineni Perumallu College (EEE)</strong><br>
+                        <p style="font-family:courier;">  Duration: 2018 - 2020</p>
+                        <p style="font-family:courier;">CGPA: 7.8 (78%)</p> 
+                    </li>
+                    <li>
+                        <strong>Class X: GSR Model public school </strong><br>
+                        <p style="font-family:courier;">Duration: 2017 - 2018</p>
+                        <p style="font-family:courier;"> CGPA: 9.2 (92%)</p>
+                    </li>
+                </ul>
+            </section>
+            <section id="skills">
+                <h1>Technical Skills</h1>
+                <section id="skills">
+                    <h2>Skills</h2>
+                    <div class="skill-item">
+                        <span class="skill-name">Programming Skills - C</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;">40%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">CSS</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;">70%</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <span class="skill-name">HTML</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 60%;">65%</div>
+                            
+                        </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Python</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%;">75%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">IOT</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%;">65%</div>
+                
+                        </div>
+                    </div>
+                    
+                </section>
+                
+                <h1>Soft Skills</h1>
+                <ul>
+                    <li>Ability to work effectively under pressure</li>
+                    <li>Quickly adjust to changes in the work</li>
+                    <li>Admit mistakes and work to make things right</li>
+                    <li>Ability to come up with a solution to a complex problem</li>
+                    <li>Determined to keep going and find a way to overcome obstacles</li>
+                </ul>
+            </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <ol>
+                    <li>
+                        <strong>Payment Gateway Integration With Database</strong><br>
+                        The main objective of the project is to provide a user-friendly interface for customers to input
+                        their payment information and complete transactions quickly and easily.
+                    </li>
+                    <li>
+                        <strong>Water Level Indicator</strong><br>
+                        The objective of a water level indicator is to monitor the water level in a tank or reservoir in real-time
+                        to ensure that an adequate supply of water is available for various applications.
+                    </li>
+                    <li>
+                        <strong>Advanced Footstep Power Generation</strong><br>
+                        The objective of an advanced footstep power generation system is to convert kinetic energy
+                        generated by foot traffic into electrical energy for sustainable and renewable power.
+                    </li>
+                </ol>
+            </section>
+            <section id="certificates">
+                <h2>Certificates</h2>
+                <ul>
+                    <li>Flipkart 4.0 - Software Development Certificate</li>
+                    <li>Full Stack Development Certificate by Talentio</li>
+                    <li>Smart Home Automation Certificate by JNTU Narasaraopet</li>
+                    <li>Data Structures in Python Certificate by Sololearn</li>
+                    <li>Matlab Workshop Certificate</li>
+                    <li>Internet of Things Workshop Certificate</li>
+                </ul>
+            </section>
+            <section id="languages">
+                <h2>Languages</h2>
+                <p>Telugu, Hindi, English</p>
+            </section>
+            <section id="contact" style="display:none;">
+                <h2>Contact</h2>
+                <p>
+                    Phone: +918712127035<br>
+                    Email: pranathigorrepati02@gmail.com
+                </p>
+    <h2>Feedback</h2>
+    <p>Feel free to leave your feedback or send me a message:</p>
+    <form action="mailto:pranathigorrepati02@gmail.com" method="POST" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name">
+        <br>
+        <textarea name="message" placeholder="Your Feedback"></textarea>
+        <br>
+        <input type="submit" value="Send Feedback">
+    </form>
+</section>
